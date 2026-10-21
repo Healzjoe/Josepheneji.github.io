@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Joseph Eneji — Python & Flask developer, IT support professional." />
+  <title>Joseph Eneji — Portfolio</title>
+
+  <!-- 1. Bootstrap CSS (framework) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap icons (used for the contact icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- 2. Your custom CSS, loaded AFTER Bootstrap so it can override it -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Joseph Eneji</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#data">Data Analysis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Joseph Eneji</h1>
+      <p class="lead mt-3">Python &amp; Flask Developer &middot; IT Support Professional</p>
+      <p class="mb-4">Building secure, database-backed web applications and keeping real networks running.</p>
+      <a href="#projects" class="btn btn-light btn-lg me-2">View My Work</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <p class="fs-5">
+            I'm a Python developer with a Bachelor's degree in Information Technology and two years of hands-on
+            technical support experience, including fiber network infrastructure and the UNICAL fee portal.
+          </p>
+          <p>
+            I build full-stack web applications with Flask, SQLAlchemy and Bootstrap. My work covers relational
+            database design, authentication, secure password reset flows, and deployment to live hosting, using
+            Git for version control. I bring a support background into development, which means I understand
+            how software behaves for real users, not just in theory.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Languages &amp; Frameworks</h5>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">Flask</span>
+          <span class="skill-badge">Jinja2</span>
+          <span class="skill-badge">WTForms</span>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Database &amp; ORM</h5>
+          <span class="skill-badge">SQLAlchemy</span>
+          <span class="skill-badge">PostgreSQL</span>
+          <span class="skill-badge">SQLite</span>
+          <span class="skill-badge">Relational modeling</span>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Frontend</h5>
+          <span class="skill-badge">HTML5</span>
+          <span class="skill-badge">CSS3</span>
+          <span class="skill-badge">Bootstrap</span>
+          <span class="skill-badge">Responsive design</span>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Auth, Security &amp; Deployment</h5>
+          <span class="skill-badge">Flask-Login</span>
+          <span class="skill-badge">Password hashing (PBKDF2)</span>
+          <span class="skill-badge">CSRF protection</span>
+          <span class="skill-badge">Token-based reset</span>
+          <span class="skill-badge">Gunicorn</span>
+          <span class="skill-badge">Render</span>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">Tools</h5>
+          <span class="skill-badge">Git &amp; GitHub</span>
+          <span class="skill-badge">PyCharm</span>
+          <span class="skill-badge">Branching &amp; merging</span>
+          <span class="skill-badge">Pandas</span>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fw-bold">IT Support</h5>
+          <span class="skill-badge">Fiber network support</span>
+          <span class="skill-badge">Troubleshooting</span>
+          <span class="skill-badge">User support</span>
+          <span class="skill-badge">Team management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">Full-Stack Flask Blog</h5>
+            <p class="text-muted small mb-2">Flask &middot; SQLAlchemy &middot; PostgreSQL &middot; Bootstrap</p>
+            <p>A blog platform with user registration and login, admin-only post management, commenting, Gravatar avatars, secure password reset via signed expiring tokens, and 30-minute inactivity timeouts.</p>
+            <div class="mt-auto">
+              <a href="https://day-70-advance-blog-for-deployment.onrender.com" target="_blank" rel="noopener" class="btn btn-sm btn-primary me-2">Live Demo</a>
+              <a href="https://github.com/Healzjoe/day-70-advance-blog-for-deployment" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">Movie Review App</h5>
+            <p class="text-muted small mb-2">Flask &middot; SQLAlchemy &middot; Bootstrap</p>
+            <p>A CRUD web application for adding, editing and reviewing movies, backed by a relational database with a responsive Bootstrap interface.</p>
+            <div class="mt-auto">
+              <a href="https://github.com/Healzjoe" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">Password Generator</h5>
+            <p class="text-muted small mb-2">Python</p>
+            <p>A Python tool that generates secure, randomized passwords based on the length and character requirements the user chooses.</p>
+            <div class="mt-auto">
+              <a href="https://github.com/Healzjoe" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Analysis -->
+  <section id="data" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Data Analysis</h2>
+      <p class="text-muted mb-4">Python projects in pandas, NumPy, Matplotlib, and Plotly: cleaning messy data, finding patterns, and visualizing the results.</p>
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">1. Movie Budgets and Box Office Revenue</h5>
+            <p class="data-meta">pandas &middot; data cleaning &middot; describe() &middot; datetime conversion</p>
+            <p>A dataset of 5,391 movies with production budget, worldwide gross, domestic gross, and release date. The currency columns were stored as text with $ signs and commas, so I removed those characters and converted them to numbers. I then converted Release_Date to a datetime type and checked the data for NaN values and duplicates.</p>
+            <div class="finding">
+              <strong>Findings:</strong> The average production budget is about $31.1M, and the average worldwide gross is about $88.9M. Some movies grossed $0, and the top grosser reached about $2.78B. The spread is very wide, so the average hides a lot of variation.
+            </div>
+            <div class="mt-3"><span class="skill-badge">pandas</span><span class="skill-badge">Data cleaning</span><span class="skill-badge">Statistics</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">2. Google Trends vs. Bitcoin, Tesla, and Unemployment</h5>
+            <p class="data-meta">pandas &middot; matplotlib &middot; dual-axis charts &middot; time series resampling</p>
+            <p>I compared Google search interest with real-world data: Bitcoin prices, Tesla's stock price, and unemployment rates. I built dual-axis charts so both series share one time axis, formatted the date ticks by year and month, and resampled daily Bitcoin prices to monthly values.</p>
+            <div class="finding">
+              <strong>What it shows:</strong> Search interest often rises and falls alongside price and economic events, which makes search data useful as an early signal.
+            </div>
+            <div class="mt-3"><span class="skill-badge">matplotlib</span><span class="skill-badge">Time series</span><span class="skill-badge">resample()</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">3. Google Play Store App Analytics</h5>
+            <p class="data-meta">pandas &middot; Plotly &middot; data cleaning &middot; groupby</p>
+            <p>I cleaned a Play Store dataset by removing duplicate rows, dropping rows with missing ratings, and converting Price and Installs from text to numbers. I then estimated revenue per app as price times installs and removed apps priced above $250.</p>
+            <p>Charts include a donut chart of content ratings, a bar chart of app counts by category, a horizontal bar chart of total downloads, a grouped bar chart of free vs. paid apps (log scale), and a box plot of paid-app revenue by category.</p>
+            <div class="finding">
+              <strong>What it shows:</strong> Most categories are dominated by free apps, and paid apps have a few very high earners alongside many low earners.
+            </div>
+            <div class="mt-3"><span class="skill-badge">Plotly</span><span class="skill-badge">Data cleaning</span><span class="skill-badge">Box plot</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">4. NumPy Fundamentals and Matrix Multiplication</h5>
+            <p class="data-meta">NumPy &middot; arrays &middot; slicing &middot; linear algebra</p>
+            <p>I practiced creating arrays, working with 1D, 2D, and 3D shapes, slicing, and reversing arrays. I also worked through matrix multiplication by hand and with <code>np.matmul()</code>, and checked each element against the formula.</p>
+            <div class="mt-3"><span class="skill-badge">NumPy</span><span class="skill-badge">Matrices</span><span class="skill-badge">Slicing</span></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold">5. Image Processing: RGB to Grayscale</h5>
+            <p class="data-meta">NumPy &middot; PIL &middot; matplotlib &middot; matrix multiplication</p>
+            <p>I loaded a color image as a NumPy array with shape (height, width, 3) and converted it to grayscale. Each pixel's RGB values are multiplied by the weights 0.2126, 0.7152, and 0.0722, the standard Rec. 601 luma weights, using a single matrix multiplication.</p>
+            <div class="finding">
+              <strong>Why it matters:</strong> Converting an image is the same operation as a matrix product, so NumPy's linear algebra applies directly to image data.
+            </div>
+            <div class="mt-3"><span class="skill-badge">PIL</span><span class="skill-badge">Image arrays</span><span class="skill-badge">Linear algebra</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="row">
+        <div class="col-lg-8">
+
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">IT Support / Fiber Network Technician</h5>
+            <p class="text-muted mb-2">FZX Media Consulting Ltd &middot; 2021 &ndash; Present</p>
+            <ul>
+              <li>Provided technical support for fiber networking infrastructure, diagnosing and resolving connectivity and hardware issues.</li>
+              <li>Supported students with access and transaction problems on the UNICAL fee portal.</li>
+              <li>Delivered hands-on troubleshooting across networking and web-based systems.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">Manager</h5>
+            <p class="text-muted mb-2">FEO Computers &middot; 2017 &ndash; 2019</p>
+          </div>
+
+          <div class="timeline-item">
+            <h5 class="fw-bold mb-1">Support Assistant</h5>
+            <p class="text-muted mb-2">University of Calabar, Centre for General Studies &middot; 2019 &ndash; 2020</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline-item">
+        <h5 class="fw-bold mb-1">B.Sc. Information Technology</h5>
+        <p class="text-muted mb-0">National Open University of Nigeria &middot; Graduated</p>
+        <h5 class="fw-bold mb-1">CERTIFICATIONS & PROFESSIONAL DEVELOPMENT</h5>
+        <p class="text-muted mb-0">100 Days of Code: The Complete Python Pro Bootcamp
+        Udemy — Dr. Angela Yu
+        Certificate of Completion — 2026 &middot;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="fs-5 mb-4">Open to developer roles, freelance projects, and IT support opportunities.</p>
+      <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:godhealz001@gmail.com">godhealz001@gmail.com</a></p>
+      <p class="mb-2"><i class="bi bi-telephone-fill me-2"></i>08129182866</p>
+      <p class="mb-4"><i class="bi bi-geo-alt-fill me-2"></i>Calabar, Cross River State, Nigeria</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://github.com/Healzjoe" target="_blank" rel="noopener" class="btn btn-dark"><i class="bi bi-github me-1"></i>GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; <span id="year"></span> Joseph Eneji. Built with Flask, Bootstrap and a lot of debugging.</p>
+    </div>
+  </footer>
+
+  <!-- 3. Bootstrap JavaScript (for the mobile menu) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 4. Your custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
